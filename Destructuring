@@ -1,0 +1,18 @@
+const student = {
+    firstname: 'Abdul Aziz',
+    lastname: 'Akmal',
+    country: 'Pakistan'
+};
+
+//object destructuring 
+
+const { firstname, lastname, country } = student;
+console.log(firstname, lastname, country);
+
+//array destruction
+var arr = ["Apple", "Banana"];
+// destructuring assignment  
+var [first, second] = arr;  
+  
+console.log(first); 
+console.log(second);  
