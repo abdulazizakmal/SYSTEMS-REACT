@@ -1,0 +1,13 @@
+// In banking Applications bank balance could be updated while the account number remains same
+
+const accountNumber = "456978628522";
+let bankBalance = 40000;
+
+console.log(accountNumber);
+console.log(bankBalance);
+bankBalance = 50000;
+//It will not allow account number to change
+accountNumber = 123456785522;
+
+//console.log(accountNumber);
+console.log(bankBalance);
