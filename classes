@@ -1,0 +1,17 @@
+class student { 
+   
+  student(firstName, lastName, rank, grade){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.country = country;
+    this.grade = grade;
+  }
+  
+  editGrade(grade){
+    this.grade = grade;
+    console.log(grade);
+  }
+  
+}
+var obj = new student("Kashif", "Ahmed", "Pakistan"," ")
+obj.editGrade("A");
