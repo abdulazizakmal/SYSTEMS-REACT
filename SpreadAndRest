@@ -1,0 +1,34 @@
+class student { 
+   
+  student(firstName, lastName, rank, grade){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.country = country;
+    this.grade = grade;
+  }
+  
+  editGrade(grade){
+    this.grade = grade;
+//     console.log(grade);
+  }
+  
+}
+
+//rest operator
+function addStudentsToClass(...students, Class)
+{
+  Class = [...Class,student];
+  console.log(Class);
+}
+var obj = new student("Kashif", "Ahmed", "Pakistan"," ")
+obj.editGrade("A");
+obj2 = new student("Qasim","Ahmed","Pakistan"," ");
+obj2.editGrade("B");
+obj3 = new student("Faisal","khan","pakistan"," ");
+obj3.editGrade("C")
+
+var new_class = [...obj, ... obj2, ...obj3 ];
+// console.log(new_class);
+obj4 = new student("Faisal","khan","Pakistan"," ");
+obj5 = new student("Faisal","khan","Pakistan"," ");
+addStudentsToClass([obj4,obj5],new_class);
